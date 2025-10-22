@@ -1,0 +1,53 @@
+<?php
+
+// Array de idiomas permitidos
+$langs = ['es', 'eu'];
+
+//Array asociativo (3 nieveles) para determinar las url permitidas y asociarles el recurso de la vista que corresponda
+$arrayRutasGet = [
+    'es' => [
+        '/es' => [
+            'view'      => '/php/views/es/inicio.php' 
+        ],
+        '/es/sobre-nosotros' => [
+            'view'      => '/php/views/es/quienesSomos.php'
+        ],
+        '/es/productos' => [
+            'view'      => '/php/views/es/productos.php'
+        ],
+        '/es/contacto' => [
+            'view'      => '/php/views/es/contacto.php'
+        ],
+        '/es/showroom' => [
+            'view'      => '/php/views/templates.php'
+        ],
+        '/es/terminos-legales' => [
+            'view'      => '/php/views/es/terminos.php'
+        ],
+        '/es/gracias' => [
+            'view'      => '/php/views/es/gracias.php'
+        ]
+    ],
+    'eu' => [
+        '/eu' => [
+            'view'      => '/php/views/eu/inicio.php'
+        ],
+        '/eu/guri-buruz' => [
+            'view'      => '/php/views/eu/quienesSomos.php'
+        ],
+        '/eu/produktuak' => [
+            'view'      => '/php/views/eu/productos.php'
+        ],
+        '/eu/kontaktua' => [
+            'view'      => '/php/views/eu/contacto.php'
+        ],
+        '/eu/legezko-terminoak' => [
+            'view'      => '/php/views/eu/terminos.php'
+        ],
+        '/eu/eskerrikasko' => [
+            'view'      => '/php/views/eu/gracias.php'
+        ]
+    ]
+];
+
+
