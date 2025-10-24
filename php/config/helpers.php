@@ -32,3 +32,7 @@ function mensaje_error($lang, $ruta, $parametro01, $parametro02, $parametro03, $
 
 // FUNCIÓN NATIVA PHP PARA CONSEGUIR EL AÑO, se usa en el footer
 $anio=date('Y');
+
+
+// MOSTRASR O NO ERRORES PHP, EN PRODUCCIÓN ESTO DEBERÍA ESTAR COMO 0, UNA VEZ SEPAMOS QUE TODO ESTÁ OK
+ini_set('display_errors', $_ENV['DISPLAY_ERRORS']);

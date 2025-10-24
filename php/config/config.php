@@ -26,6 +26,15 @@ $arrayRutasGet = [
         ],
         '/es/gracias' => [
             'view'      => '/php/views/es/gracias.php'
+        ],
+        '/es/productos/panaderia' => [
+            'view'      => '/php/views/es/producto.php'
+        ],
+        '/es/productos/pasteleria' => [
+            'view'      => '/php/views/es/producto.php'
+        ],
+        '/es/productos/torrijas' => [
+            'view'      => '/php/views/es/producto.php'
         ]
     ],
     'eu' => [
