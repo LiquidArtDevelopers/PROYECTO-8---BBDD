@@ -55,6 +55,15 @@ $arrayRutasGet = [
         ],
         '/eu/eskerrikasko' => [
             'view'      => '/php/views/eu/gracias.php'
+        ],
+        '/eu/produktuak/okindegia' => [
+            'view'      => '/php/views/eu/producto.php'
+        ],
+        '/eu/produktuak/goxotegia' => [
+            'view'      => '/php/views/eu/producto.php'
+        ],
+        '/eu/produktuak/torrijak' => [
+            'view'      => '/php/views/eu/producto.php'
         ]
     ]
 ];

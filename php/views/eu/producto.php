@@ -41,7 +41,7 @@ if(mysqli_num_rows($resultado) == 1){
 
 
 <!DOCTYPE html>
-<html lang="es">
+<html lang="eu">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -58,7 +58,7 @@ if(mysqli_num_rows($resultado) == 1){
 
     <?php
     // Metadatos globales
-    include './php/includes/es/metadatos_globales.php'
+    include './php/includes/eu/metadatos_globales.php'
     ?>
 
 </head>
@@ -66,11 +66,11 @@ if(mysqli_num_rows($resultado) == 1){
 
     <?php
     // Elementos globales dentro del body: script de tag manager
-    include './php/includes/es/body_global.php'
+    include './php/includes/eu/body_global.php'
     ?>
 
     <!-- NAV -->
-    <?php include './php/includes/es/nav.php' ?>
+    <?php include './php/includes/eu/nav.php' ?>
 
     <h1><?=$h1?></h1>
 
@@ -81,6 +81,6 @@ if(mysqli_num_rows($resultado) == 1){
 
 
     <!-- FOOTER -->
-    <?php include './php/includes/es/footer.php'?>
+    <?php include './php/includes/eu/footer.php'?>
 </body>
 </html>
