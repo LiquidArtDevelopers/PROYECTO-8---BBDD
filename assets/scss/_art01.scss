@@ -38,8 +38,6 @@
             }    
         }
     }
-
-    
     >div{
         width: 100%;
         padding: c.$padMin;        
@@ -60,6 +58,10 @@
                 width: 50%;
                 min-width: initial;
             }    
+        }
+        // este es el encabezado, sea el que sea
+        >:nth-child(1){
+            
         }
     }
 }

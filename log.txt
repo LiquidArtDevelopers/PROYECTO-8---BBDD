@@ -1,1 +1,5 @@
 Quiero que revises el sitemap y em digas si es correcto para que sea compatible
+2025-10-29 18:02:56 - En enlaces_menu.php he añadido algunos enlaces,quiero que los repliques en la versión en "eu" teniendo en cuenta las rutas adecuadas
+2025-10-29 19:45:46 - Necesito una sentencia SQL de update para rellenar los campos srcImg2, altImg2, titleImg2, h2_1 para /es y /eu (pasteleria/torrijas) y solo /eu (panaderia).
+2025-10-29 19:47:09 - Necesito que, menos con el src de la img, el resto del copy lo hagas tú teniendo en cuenta la traducción y el contexto
+2025-10-29 19:51:24 - haz el update sólo del campo del src, teniendo en cuenta que para las de pastelería en eu y es sea esta foto. revisa cómo es la ruta "/assets/img/.." panes-pasteles-1500.avif y para toriijas usa esta las-mejores-torrijas-de-gipuzkoa1200.avif

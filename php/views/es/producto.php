@@ -25,11 +25,20 @@ if(mysqli_num_rows($resultado) == 1){
         // 5) VARIABILIZAR
         $title = $fila['title'];
         $description = $fila['description'];
-        $h1 = $fila['h1'];
-        $parrafo1 = $fila['parrafo1'];
+        // header
+        $h1 = $fila['h1'];        
         $srcImg1 = $fila['srcImg1'];
         $altImg1 = $fila['altImg1'];
         $titleImg1 = $fila['titleImg1'];
+
+        // art01
+        $srcImg2 = $fila['srcImg2'];
+        $altImg2 = $fila['altImg2'];
+        $titleImg2 = $fila['titleImg2'];
+        $h2_1  = $fila['h2_1'];
+        $parrafo1 = $fila['parrafo1'];
+        $parrafo2 = $fila['parrafo2'];
+
     }
 
 }else{
@@ -72,12 +81,39 @@ if(mysqli_num_rows($resultado) == 1){
     <!-- NAV -->
     <?php include './php/includes/es/nav.php' ?>
 
-    <h1><?=$h1?></h1>
+    <!-- HERO01 -->
+    <header>
+        <h1><?=$h1?></h1>
 
+        <div>            
+            <img src="<?=$_ENV['RUTA']?>/assets/img/logos/panaderia-aginaga-logo.svg" alt="">
+        </div>
+        <a href="<?=$_ENV['RUTA']?>/es/contacto" class="boton">Contáctanos</a>
 
-    <p><?=$parrafo1?></p>
+        <img src="<?=$srcImg1?>" alt="<?=$altImg1?>" title="<?=$titleImg1?>" >
 
-    <img src="<?=$_ENV['RUTA']?><?=$srcImg1?>" alt="<?=$altImg1?>X" title="<?=$titleImg1?>">
+    </header>
+
+    <main>
+        <section>
+
+            <!-- Artículo 01 -->
+            <article class="art01">
+                <img src="<?=$srcImg2?>" alt="<?=$altImg2?>" title="<?=$titleImg2?>">
+                <div>
+                    <h2><?=$h2_1?></h2>
+                    <p><?=$parrafo1?></p>
+                    <p><?=$parrafo2?></p>
+                    <!-- <a href="" class="boton">CTA</a> -->
+                    <a href="<?=$_ENV['RUTA']?>/es/contacto" class="moduloBoton02">
+                        <span>Contacta</span>
+                        <img src="<?=$_ENV['RUTA']?>/assets/img/system/arrow-forward-outline.svg" alt="Ve a contacto" title="Ve a contacto">
+                    </a>
+                </div>
+            </article>
+
+        </section>
+    </main>
 
 
     <!-- FOOTER -->
