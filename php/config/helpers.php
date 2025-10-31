@@ -1,5 +1,8 @@
 <?php
 
+//comienzo de sesión, tenemos que ejecutarlo antes de crear y usar las variables de sesión.
+session_start();
+
 // Función para validar si un correo tiene la forma o estructura de un correo adecuada
 // La función devuelve true si es correcto, o false si no coincide con la expresión regular con la que se compara.
 function validar_email($valorRecibido) {    
@@ -13,7 +16,7 @@ function validar_email($valorRecibido) {
 // Función que se ejecuta cuando localizamos un error en el backend del formulario por no cumplimentar algún campo de forma correcta.
 // La función obtiene todos los valores de los campos del formulario a través de los parámetros de entrada, y se encarga de redirigir a la página de contacto con los errores y los campos como query-param en la url.
 function mensaje_error($lang, $ruta, $parametro01, $parametro02, $parametro03, $parametro04, $parametro05, $parametro06){    
-          
+         
 
     switch ($lang){
         case 'es':
@@ -29,6 +32,10 @@ function mensaje_error($lang, $ruta, $parametro01, $parametro02, $parametro03, $
     
 }
 
+function mensaje_error_login($ruta){
+    header("location:$ruta/es/zona-admin?error=1");
+    die;
+}
 
 // FUNCIÓN NATIVA PHP PARA CONSEGUIR EL AÑO, se usa en el footer
 $anio=date('Y');

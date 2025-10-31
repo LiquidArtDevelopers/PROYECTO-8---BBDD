@@ -35,6 +35,12 @@ $arrayRutasGet = [
         ],
         '/es/productos/torrijas' => [
             'view'      => '/php/views/es/producto.php'
+        ],
+        '/es/zona-admin' => [
+            'view'      => '/php/views/es/zonaAdmin.php'
+        ],
+        '/es/logout' => [
+            'view'      => '/php/views/logout.php'
         ]
     ],
     'eu' => [
