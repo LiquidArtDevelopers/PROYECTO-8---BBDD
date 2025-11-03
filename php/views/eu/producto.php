@@ -67,7 +67,7 @@ if(mysqli_num_rows($resultado) == 1){
 
     <?php
     // Metadatos globales
-    include './php/includes/es/metadatos_globales.php'
+    include './php/includes/eu/metadatos_globales.php'
     ?>
 
 </head>
@@ -75,11 +75,11 @@ if(mysqli_num_rows($resultado) == 1){
 
     <?php
     // Elementos globales dentro del body: script de tag manager
-    include './php/includes/es/body_global.php'
+    include './php/includes/eu/body_global.php'
     ?>
 
     <!-- NAV -->
-    <?php include './php/includes/es/nav.php' ?>
+    <?php include './php/includes/eu/nav.php' ?>
 
     <!-- HERO01 -->
     <header>
@@ -105,7 +105,7 @@ if(mysqli_num_rows($resultado) == 1){
                     <p><?=$parrafo1?></p>
                     <p><?=$parrafo2?></p>
                     <!-- <a href="" class="boton">CTA</a> -->
-                    <a href="<?=$_ENV['RUTA']?>/es/contacto" class="moduloBoton02">
+                    <a href="<?=$_ENV['RUTA']?>/eu/kontaktua" class="moduloBoton02">
                         <span>Contacta</span>
                         <img src="<?=$_ENV['RUTA']?>/assets/img/system/arrow-forward-outline.svg" alt="Ve a contacto" title="Ve a contacto">
                     </a>
@@ -117,6 +117,6 @@ if(mysqli_num_rows($resultado) == 1){
 
 
     <!-- FOOTER -->
-    <?php include './php/includes/es/footer.php'?>
+    <?php include './php/includes/eu/footer.php'?>
 </body>
 </html>

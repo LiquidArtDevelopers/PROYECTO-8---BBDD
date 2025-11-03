@@ -69,7 +69,7 @@ if(mysqli_num_rows($resultado) == 1){
     // Metadatos globales
     include './php/includes/es/metadatos_globales.php'
     ?>
-
+    
 </head>
 <body>
 
