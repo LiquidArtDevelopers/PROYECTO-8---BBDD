@@ -72,6 +72,8 @@
 
                     <p>* Campos obligatorios</p>
 
+                    <a href="<?=$_ENV['RUTA']?>/es/registro">¿No eres socio aún? Regístrate aquí</a>
+
                 </form>
             </article>
         <?php

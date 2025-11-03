@@ -16,7 +16,6 @@ function validar_email($valorRecibido) {
 // Función que se ejecuta cuando localizamos un error en el backend del formulario por no cumplimentar algún campo de forma correcta.
 // La función obtiene todos los valores de los campos del formulario a través de los parámetros de entrada, y se encarga de redirigir a la página de contacto con los errores y los campos como query-param en la url.
 function mensaje_error($lang, $ruta, $parametro01, $parametro02, $parametro03, $parametro04, $parametro05, $parametro06){    
-         
 
     switch ($lang){
         case 'es':
@@ -35,6 +34,20 @@ function mensaje_error($lang, $ruta, $parametro01, $parametro02, $parametro03, $
 function mensaje_error_login($ruta){
     header("location:$ruta/es/zona-admin?error=1");
     die;
+}
+
+function mensaje_error_logup($ruta, $error, $lang){
+    switch ($lang){
+        case 'es':
+            header("location:$ruta/es/registro?error=$error");
+            die;
+        case 'eu':
+            header("location:$ruta/eu/erregistroa?error=$error");
+            die;
+        default:
+            header("location:$ruta/es/registro?error=$error");
+            die;
+    }
 }
 
 // FUNCIÓN NATIVA PHP PARA CONSEGUIR EL AÑO, se usa en el footer

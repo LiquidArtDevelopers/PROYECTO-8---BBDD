@@ -41,7 +41,10 @@ $arrayRutasGet = [
         ],
         '/es/logout' => [
             'view'      => '/php/views/logout.php'
-        ]
+        ],
+        '/es/registro' => [
+            'view'      => '/php/views/es/logup.php'
+        ],
     ],
     'eu' => [
         '/eu' => [

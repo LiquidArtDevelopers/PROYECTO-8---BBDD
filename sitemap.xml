@@ -38,6 +38,60 @@
         <xhtml:link rel="alternate" hreflang="es" href="https://bbdd-profe.webda.eus/es/productos"/>
     </url>
     <url>
+        <loc>https://bbdd-profe.webda.eus/es/productos/panaderia</loc>
+        <lastmod>2025-10-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://bbdd-profe.webda.eus/es/productos/panaderia"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://bbdd-profe.webda.eus/es/productos/panaderia"/>
+        <xhtml:link rel="alternate" hreflang="eu" href="https://bbdd-profe.webda.eus/eu/produktuak/okindegia"/>
+    </url>
+    <url>
+        <loc>https://bbdd-profe.webda.eus/eu/produktuak/okindegia</loc>
+        <lastmod>2025-10-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://bbdd-profe.webda.eus/eu/produktuak/okindegia"/>
+        <xhtml:link rel="alternate" hreflang="eu" href="https://bbdd-profe.webda.eus/eu/produktuak/okindegia"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://bbdd-profe.webda.eus/es/productos/panaderia"/>
+    </url>
+    <url>
+        <loc>https://bbdd-profe.webda.eus/es/productos/pasteleria</loc>
+        <lastmod>2025-10-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://bbdd-profe.webda.eus/es/productos/pasteleria"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://bbdd-profe.webda.eus/es/productos/pasteleria"/>
+        <xhtml:link rel="alternate" hreflang="eu" href="https://bbdd-profe.webda.eus/eu/produktuak/goxotegia"/>
+    </url>
+    <url>
+        <loc>https://bbdd-profe.webda.eus/eu/produktuak/goxotegia</loc>
+        <lastmod>2025-10-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://bbdd-profe.webda.eus/eu/produktuak/goxotegia"/>
+        <xhtml:link rel="alternate" hreflang="eu" href="https://bbdd-profe.webda.eus/eu/produktuak/goxotegia"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://bbdd-profe.webda.eus/es/productos/pasteleria"/>
+    </url>
+    <url>
+        <loc>https://bbdd-profe.webda.eus/es/productos/torrijas</loc>
+        <lastmod>2025-10-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://bbdd-profe.webda.eus/es/productos/torrijas"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://bbdd-profe.webda.eus/es/productos/torrijas"/>
+        <xhtml:link rel="alternate" hreflang="eu" href="https://bbdd-profe.webda.eus/eu/produktuak/torrijak"/>
+    </url>
+    <url>
+        <loc>https://bbdd-profe.webda.eus/eu/produktuak/torrijak</loc>
+        <lastmod>2025-10-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://bbdd-profe.webda.eus/eu/produktuak/torrijak"/>
+        <xhtml:link rel="alternate" hreflang="eu" href="https://bbdd-profe.webda.eus/eu/produktuak/torrijak"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://bbdd-profe.webda.eus/es/productos/torrijas"/>
+    </url>
+    <url>
         <loc>https://bbdd-profe.webda.eus/es/sobre-nosotros</loc>
         <lastmod>2025-10-15</lastmod>
         <changefreq>monthly</changefreq>
