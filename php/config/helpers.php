@@ -31,9 +31,18 @@ function mensaje_error($lang, $ruta, $parametro01, $parametro02, $parametro03, $
     
 }
 
-function mensaje_error_login($ruta){
-    header("location:$ruta/es/zona-admin?error=1");
-    die;
+function mensaje_error_login($ruta, $lang){
+    switch ($lang){
+        case 'es':
+            header("location:$ruta/es/zona-admin?error=1");
+            die;
+        case 'eu':
+            header("location:$ruta/eu/admin-gunea?error=1");
+            die;
+        default:
+            header("location:$ruta/es/zona-admin?error=1");
+            die;
+    }
 }
 
 function mensaje_error_logup($ruta, $error, $lang){

@@ -40,7 +40,7 @@ $arrayRutasGet = [
             'view'      => '/php/views/es/zonaAdmin.php'
         ],
         '/es/logout' => [
-            'view'      => '/php/views/logout.php'
+            'view'      => '/php/views/es/logout.php'
         ],
         '/es/registro' => [
             'view'      => '/php/views/es/logup.php'
@@ -73,7 +73,16 @@ $arrayRutasGet = [
         ],
         '/eu/produktuak/torrijak' => [
             'view'      => '/php/views/eu/producto.php'
-        ]
+        ],
+        '/eu/admin-gunea' => [
+            'view'      => '/php/views/eu/zonaAdmin.php'
+        ],
+        '/eu/logout' => [
+            'view'      => '/php/views/eu/logout.php'
+        ],
+        '/eu/erregistroa' => [
+            'view'      => '/php/views/eu/logup.php'
+        ],
     ]
 ];
 

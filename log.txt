@@ -1,7 +1,9 @@
 Quiero que revises el sitemap y em digas si es correcto para que sea compatible
-2025-10-29 18:02:56 - En enlaces_menu.php he aÒadido algunos enlaces,quiero que los repliques en la versiÛn en "eu" teniendo en cuenta las rutas adecuadas
+2025-10-29 18:02:56 - En enlaces_menu.php he a√±adido algunos enlaces,quiero que los repliques en la versi√≥n en "eu" teniendo en cuenta las rutas adecuadas
 2025-10-29 19:45:46 - Necesito una sentencia SQL de update para rellenar los campos srcImg2, altImg2, titleImg2, h2_1 para /es y /eu (pasteleria/torrijas) y solo /eu (panaderia).
-2025-10-29 19:47:09 - Necesito que, menos con el src de la img, el resto del copy lo hagas t˙ teniendo en cuenta la traducciÛn y el contexto
-2025-10-29 19:51:24 - haz el update sÛlo del campo del src, teniendo en cuenta que para las de pastelerÌa en eu y es sea esta foto. revisa cÛmo es la ruta "/assets/img/.." panes-pasteles-1500.avif y para toriijas usa esta las-mejores-torrijas-de-gipuzkoa1200.avif
-2025-10-31 17:38:07 - Necesito que aÒadas en la base de datos, en la tabla productos, en el campo "parrafo2" texto copy correspondiente a cada url.
+2025-10-29 19:47:09 - Necesito que, menos con el src de la img, el resto del copy lo hagas t√∫ teniendo en cuenta la traducci√≥n y el contexto
+2025-10-29 19:51:24 - haz el update s√≥lo del campo del src, teniendo en cuenta que para las de pasteler√≠a en eu y es sea esta foto. revisa c√≥mo es la ruta "/assets/img/.." panes-pasteles-1500.avif y para toriijas usa esta las-mejores-torrijas-de-gipuzkoa1200.avif
+2025-10-31 17:38:07 - Necesito que a√±adas en la base de datos, en la tabla productos, en el campo "parrafo2" texto copy correspondiente a cada url.
 2025-11-03 19:05:09 - completa el sitemap.xml con las 6 rutas nuevas de producto. verifica las rutas en config.php
+2025-11-05 12:30:00 - en esta l√≠nea hay otras formas de hasear la password?
+2025-11-05 12:35:00 - para luego poder comprobar la contrase√±a con el hash de la bbdd uso la misma funci√≥n de convertir a hash la pass que el user ponga en el login o hay otra funci√≥n?

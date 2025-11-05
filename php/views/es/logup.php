@@ -69,7 +69,7 @@
                     <labelfor="aceptarTerminos">Aceptar <a href="<?=$_ENV['RUTA']?>/es/terminos-legales">términos y condiciones de privacidad</a></label>
                 </div>
 
-                <!-- inpout oculto donde el value es el valor de $lang, ergo el idioma -->
+                <!-- input oculto donde el value es el valor de $lang, ergo el idioma -->
                 <input type="text" name="inputIdioma" value="<?= $lang?>" style="display:none;">
 
                 <input type="submit" value="ENVIAR" class="boton">

@@ -6,7 +6,6 @@
 $con = mysqli_connect($_ENV['BBDD_HOST'], $_ENV['BBDD_USER'], $_ENV['BBDD_PASS'], $_ENV['BBDD_BBDD']);
 $con->set_charset("utf8mb4");
 
-
 // 2) CONSULTA SQL A LA BBDD
 $sql = "SELECT * FROM `productos` WHERE ruta = '$url'";
 
@@ -45,6 +44,9 @@ if(mysqli_num_rows($resultado) == 1){
     // que no ha encotrado ningun registro o hay más de 1, por lo que debemos dar fallo.
     // header location al index (redirección 301)
 }
+
+unset($resultado, $sql); //borrar de la memoria $resultado y $sql
+mysqli_close($con); //cerrando la conexión a la BBDD
 
 ?>
 

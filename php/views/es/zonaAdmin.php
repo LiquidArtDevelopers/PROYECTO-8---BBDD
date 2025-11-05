@@ -66,7 +66,10 @@
                     <input type="text" name="usuario" id="usuario" placeholder="* Escribe tu usuario" value="">
 
                     <label for="pass">Contraseña *</label>
-                    <input type="password" name="password" id="pass" placeholder="Contraseña">                
+                    <input type="password" name="password" id="pass" placeholder="Contraseña">    
+                    
+                    <!-- input oculto donde el value es el valor de $lang, ergo el idioma -->
+                    <input type="text" name="inputIdioma" value="<?= $lang?>" style="display:none;">
 
                     <input type="submit" value="ENVIAR" class="boton">
 

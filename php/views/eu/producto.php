@@ -46,6 +46,9 @@ if(mysqli_num_rows($resultado) == 1){
     // header location al index (redirección 301)
 }
 
+unset($resultado, $sql); //borrar de la memoria $resultado y $sql
+mysqli_close($con); //cerrando la conexión a la BBDD
+
 ?>
 
 
