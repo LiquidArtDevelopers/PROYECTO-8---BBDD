@@ -18,6 +18,7 @@ $arrayRutasGet = [
         '/es/contacto' => [
             'view'      => '/php/views/es/contacto.php'
         ],
+
         '/es/showroom' => [
             'view'      => '/php/views/templates.php'
         ],
@@ -27,6 +28,7 @@ $arrayRutasGet = [
         '/es/gracias' => [
             'view'      => '/php/views/es/gracias.php'
         ],
+        
         '/es/productos/panaderia' => [
             'view'      => '/php/views/es/producto.php'
         ],

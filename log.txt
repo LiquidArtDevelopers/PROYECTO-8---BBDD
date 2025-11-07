@@ -7,3 +7,18 @@ Quiero que revises el sitemap y em digas si es correcto para que sea compatible
 2025-11-03 19:05:09 - completa el sitemap.xml con las 6 rutas nuevas de producto. verifica las rutas en config.php
 2025-11-05 12:30:00 - en esta l√≠nea hay otras formas de hasear la password?
 2025-11-05 12:35:00 - para luego poder comprobar la contrase√±a con el hash de la bbdd uso la misma funci√≥n de convertir a hash la pass que el user ponga en el login o hay otra funci√≥n?
+2025-11-07 19:02:30 - En estas comprobaciones:
+
+// PASS1 NO VENGA VACÕO
+if(empty($pass1) || empty($pass2)){    
+    mensaje_error_logup($_ENV['RUTA'], "No puedes dejar el campo contraseÒa vacÌo", $lang);
+}
+
+// QUE LOS PASSWORD NO COINCIDAN ENTRE SÕ
+if($pass1 != $pass2){
+    mensaje_error_logup($_ENV['RUTA'], "Las contraseÒas no coinciden", $lang);
+}
+
+Quiero que hagas el mismo shitch case que ver·s en las comprobaciones anteriores, respetando el fallo, y de paso traduce a eu la que corresponde.
+
+M·s abajo ver· sm·s comprobaciones para hacer switch case

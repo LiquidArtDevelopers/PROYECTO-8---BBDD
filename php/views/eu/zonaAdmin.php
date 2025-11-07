@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zona Admin</title>
+    <title>Admin Gunea</title>
     <meta name="description" content="120 y 320 caracteres">
     <link rel="stylesheet" href="<?=$_ENV['RUTA']?>/assets/css/zonaAdmin.min.css">
 
     <!-- Url de esta vista -->
-    <link rel="canonical" href="<?=$_ENV['RUTA']?>/es/zona-admin">
- 
+    <link rel="canonical" href="<?=$_ENV['RUTA']?>/eu/admin-gunea">
+
     <!-- Indexación y autoridad-->
     <meta name="robots" data-lang="robots" content="nofollow, noindex">
     <meta name="referrer" content="origin">
 
     <?php
     // Metadatos globales
-    include './php/includes/es/metadatos_globales.php'
+    include './php/includes/eu/metadatos_globales.php'
     ?>
     
 </head>
@@ -24,15 +24,15 @@
 
     <?php
     // Elementos globales dentro del body: script de tag manager
-    include './php/includes/es/body_global.php'
+    include './php/includes/eu/body_global.php'
     ?>
 
     <!-- NAV -->
-    <?php include './php/includes/es/nav.php' ?>
+    <?php include './php/includes/eu/nav.php' ?>
 
     <!-- HERO01 -->
     <header>        
-        <h1>Acceso Zona privada</h1>
+        <h1>Admin gunea sarrera</h1>
         <div>            
             <img src="<?=$_ENV['RUTA']?>/assets/img/logos/panaderia-aginaga-logo.svg" alt="">
         </div>
@@ -42,7 +42,7 @@
             // MOSTRARÉ EL CONTENIDO PRIVADO
         ?>
 
-            <h2>Hola, estás logeado <?= $_SESSION['NOMBRE'] ?></h2>
+            <h2>kaixo, zaude barruan <?= $_SESSION['NOMBRE'] ?></h2>
            
         <?php
         }else{
@@ -62,20 +62,20 @@
                     <!-- AQUÍ MOSTRAMOS EL ERROR SEA CUAL SEA -->
                     <span class="error"><?php if(isset($error)){echo "Usuario y/o contraseña incorrectos";} ?></span>
 
-                    <label for="usuario">Usuario *</label>
-                    <input type="text" name="usuario" id="usuario" placeholder="* Escribe tu usuario" value="">
+                    <label for="usuario">Email *</label>
+                    <input type="text" name="usuario" id="usuario" placeholder="* Idatzi zure emaila" value="">
 
-                    <label for="pass">Contraseña *</label>
-                    <input type="password" name="password" id="pass" placeholder="Contraseña">    
+                    <label for="pass">Pasahitza *</label>
+                    <input type="password" name="password" id="pass" placeholder="Pasahitza">    
                     
                     <!-- input oculto donde el value es el valor de $lang, ergo el idioma -->
                     <input type="text" name="inputIdioma" value="<?= $lang?>" style="display:none;">
 
-                    <input type="submit" value="ENVIAR" class="boton">
+                    <input type="submit" value="BIDALI" class="boton">
 
-                    <p>* Campos obligatorios</p>
+                    <p>* Derrigorrezko eremuak</p>
 
-                    <a href="<?=$_ENV['RUTA']?>/es/registro">¿No eres socio aún? Regístrate aquí</a>
+                    <a href="<?=$_ENV['RUTA']?>/eu/erregistroa">Ez zara oraindik bazkide? Erregistratu hemen</a>
 
                 </form>
             </article>
@@ -90,7 +90,7 @@
     
 
     <!-- FOOTER -->
-    <?php include './php/includes/es/footer.php'?>
+    <?php include './php/includes/eu/footer.php'?>
 
 
 </body>

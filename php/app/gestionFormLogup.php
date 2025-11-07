@@ -25,37 +25,111 @@ $lang = $_POST['inputIdioma'];
 
 // VERIFICACIÓN
 
-if(empty($terminos)){    
-    mensaje_error_logup($_ENV['RUTA'], "Debes aceptar los términos y condiciones de privacidad.", $lang);
+if(empty($terminos)){
+    switch ($lang){
+        case "es":
+            mensaje_error_logup($_ENV['RUTA'], "Debes aceptar los términos y condiciones de privacidad.", $lang);
+            break;
+        case "eu":
+            mensaje_error_logup($_ENV['RUTA'], "Pribatutasun-baldintzak onartu behar dituzu", $lang);
+            break;
+        default:
+            mensaje_error_logup($_ENV['RUTA'], "Debes aceptar los términos y condiciones de privacidad.", $lang);
+            break;
+    }    
 }
 
 // vacio nombre
 if(empty($nombre)){    
-    mensaje_error_logup($_ENV['RUTA'], "Has dejado el nombre vacío.", $lang);
+    
+    switch ($lang){
+        case "es":
+            mensaje_error_logup($_ENV['RUTA'], "Has dejado el nombre vacío.", $lang);
+            break;
+        case "eu":
+            mensaje_error_logup($_ENV['RUTA'], "Izena hutsik utzi duzu.", $lang);
+            break;
+        default:
+            mensaje_error_logup($_ENV['RUTA'], "Has dejado el nombre vacío.", $lang);
+            break;
+    }
 }
 // EL NOMBRE NO ESTÁ ENTRE 3 Y 40 CARACTERES
 $numeroCaracteres = strlen($nombre);
-if($numeroCaracteres < 3 || $numeroCaracteres > 40){
-    mensaje_error_logup($_ENV['RUTA'], "El nombre debe tener entre 3 y 40 caracteres máximo", $lang);
+if($numeroCaracteres < 3 || $numeroCaracteres > 40){    
+    switch ($lang){
+        case "es":
+            mensaje_error_logup($_ENV['RUTA'], "El nombre debe tener entre 3 y 40 caracteres máximo", $lang);
+            break;
+        case "eu":
+            mensaje_error_logup($_ENV['RUTA'], "Izenak 3 eta 40 karaktere artean izan behar ditu, gehienez", $lang);
+            break;
+        default:
+            mensaje_error_logup($_ENV['RUTA'], "El nombre debe tener entre 3 y 40 caracteres máximo", $lang);
+            break;
+    }
 }
 
 // vacio correo
-if(empty($correo)){    
-    mensaje_error_logup($_ENV['RUTA'], "Has dejado el correo vacío", $lang);
+if(empty($correo)){        
+    switch ($lang){
+        case "es":
+            mensaje_error_logup($_ENV['RUTA'], "Has dejado el correo vacío", $lang);
+            break;
+        case "eu":
+            mensaje_error_logup($_ENV['RUTA'], "Posta hutsik utzi duzu", $lang);
+            break;
+        default:
+            mensaje_error_logup($_ENV['RUTA'], "Has dejado el correo vacío", $lang);
+            break;
+    }
 }
 // QUE NO TENGA FORMATO DE CORREO
 if(validar_email($correo)==false){    
-    mensaje_error_logup($_ENV['RUTA'], "El correo no tiene un formato válido", $lang);
+    
+    switch ($lang){
+        case "es":
+            mensaje_error_logup($_ENV['RUTA'], "El correo no tiene un formato válido", $lang);
+            break;
+        case "eu":
+            mensaje_error_logup($_ENV['RUTA'], "Mezuaren formatua ez da zuzena", $lang);
+            break;
+        default:
+            mensaje_error_logup($_ENV['RUTA'], "El correo no tiene un formato válido", $lang);
+            break;
+    }
 }
 
 // PASS1 NO VENGA VACÍO
-if(empty($pass1) || empty($pass2)){    
-    mensaje_error_logup($_ENV['RUTA'], "No puedes dejar el campo contraseña vacío", $lang);
+if(empty($pass1) || empty($pass2)){
+    switch ($lang){
+        case "es":
+            mensaje_error_logup($_ENV['RUTA'], "No puedes dejar el campo contraseña vacío", $lang);
+            break;
+        case "eu":
+            mensaje_error_logup($_ENV['RUTA'], "Ezin duzu pasahitzaren eremua hutsik utzi", $lang);
+            break;
+        default:
+            mensaje_error_logup($_ENV['RUTA'], "No puedes dejar el campo contraseña vacío", $lang);
+            break;
+    }
+
 }
 
 // QUE LOS PASSWORD NO COINCIDAN ENTRE SÍ
 if($pass1 != $pass2){
-    mensaje_error_logup($_ENV['RUTA'], "Las contraseñas no coinciden", $lang);
+    switch ($lang){
+        case "es":
+            mensaje_error_logup($_ENV['RUTA'], "Las contraseñas no coinciden", $lang);
+            break;
+        case "eu":
+            mensaje_error_logup($_ENV['RUTA'], "Pasahitzak ez datoz bat", $lang);
+            break;
+        default:
+            mensaje_error_logup($_ENV['RUTA'], "Las contraseñas no coinciden", $lang);
+            break;
+    }
+
 }
 
 
@@ -70,7 +144,17 @@ $sql = "SELECT * FROM `usuarios` WHERE correo = '$correo'";
 $resultado = mysqli_query($con, $sql);
 // comprobación del resultado (si existe un regisdtro con ese correo, mandamos error)
 if(mysqli_num_rows($resultado) > 0){
-    mensaje_error_logup($_ENV['RUTA'], "Ya existe un usuario con ese correo", $lang);
+    switch ($lang){
+        case "es":
+            mensaje_error_logup($_ENV['RUTA'], "Ya existe un usuario con ese correo", $lang);
+            break;
+        case "eu":
+            mensaje_error_logup($_ENV['RUTA'], "Posta elektroniko horrekin erabiltzaile bat dago jada", $lang);
+            break;
+        default:
+            mensaje_error_logup($_ENV['RUTA'], "Ya existe un usuario con ese correo", $lang);
+            break;
+    }
 }
 unset($resultado, $sql); //borrar de la memoria $resultado y $sql
 

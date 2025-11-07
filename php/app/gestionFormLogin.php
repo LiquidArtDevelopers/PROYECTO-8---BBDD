@@ -55,8 +55,21 @@ if(mysqli_num_rows($resultado) == 1){
         $_SESSION['CORREO'] = $correo;
 
         // EXISTE ESE USER CON ESA PASS
-        header('location:'.$_ENV["RUTA"].'/es/zona-admin');
-        die;
+        switch ($lang){
+            case "es":
+                header('location:'.$_ENV["RUTA"].'/es/zona-admin');
+                die;
+                break;
+            case "eu":
+                header('location:'.$_ENV["RUTA"].'/eu/admin-gunea');
+                die;
+                break;
+            default:
+                header('location:'.$_ENV["RUTA"].'/es/zona-admin');
+                die;
+                break;
+        }
+                
     }else{
         // NO EXISTE ESE USER CON ESA PASS
         mensaje_error_login($_ENV['RUTA'], $lang);

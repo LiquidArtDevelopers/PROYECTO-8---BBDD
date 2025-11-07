@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro</title>
+    <title>Erregistroa</title>
     <meta name="description" content="120 y 320 caracteres">
     <link rel="stylesheet" href="<?=$_ENV['RUTA']?>/assets/css/zonaAdmin.min.css">
 
     <!-- Url de esta vista -->
-    <link rel="canonical" href="<?=$_ENV['RUTA']?>/es/registro">
+    <link rel="canonical" href="<?=$_ENV['RUTA']?>/eu/erregistroa">
 
     <!-- Indexación y autoridad-->
     <meta name="robots" data-lang="robots" content="nofollow, noindex">
@@ -16,7 +16,7 @@
 
     <?php
     // Metadatos globales
-    include './php/includes/es/metadatos_globales.php'
+    include './php/includes/eu/metadatos_globales.php'
     ?>
     
 </head>
@@ -24,11 +24,11 @@
 
     <?php
     // Elementos globales dentro del body: script de tag manager
-    include './php/includes/es/body_global.php'
+    include './php/includes/eu/body_global.php'
     ?>
 
     <!-- NAV -->
-    <?php include './php/includes/es/nav.php' ?>
+    <?php include './php/includes/eu/nav.php' ?>
 
     <!-- HERO01 -->
     <header>        
@@ -52,29 +52,29 @@
                 <!-- AQUÍ MOSTRAMOS EL ERROR SEA CUAL SEA -->
                 <span class="error"><?php if(isset($error)){echo $error;} ?></span>
 
-                <label for="nombre">Nombre *</label>
-                <input type="text" name="nombre" id="nombre" placeholder="* Escribe tu nombre" value="" autocomplete="off" require>
+                <label for="nombre">Izena *</label>
+                <input type="text" name="nombre" id="nombre" placeholder="* Idatzi zure izena" value="" autocomplete="off" require>
 
-                <label for="correo">Correo *</label>
-                <input type="email" name="correo" id="correo" placeholder="* Escribe tu correo" value="" autocomplete="off" require>
+                <label for="correo">Email *</label>
+                <input type="email" name="correo" id="correo" placeholder="* Idatzo zure emaila" value="" autocomplete="off" require>
 
-                <label for="pass">Contraseña *</label>
-                <input type="password" name="password" id="pass" placeholder="Contraseña" autocomplete="off" require>
+                <label for="pass">Pasahitza *</label>
+                <input type="password" name="password" id="pass" placeholder="pasahitza" autocomplete="off" require>
                 
-                <label for="pass2">Repetir contraseña *</label>
-                <input type="password" name="passwordrepeat" id="pass2" placeholder="Repetir contraseña" autocomplete="off" require>
+                <label for="pass2">Pasahitza errepikatu*</label>
+                <input type="password" name="passwordrepeat" id="pass2" placeholder="Pasahitza errepikatu" autocomplete="off" require>
 
                 <div>
                     <input type="checkbox" name="terminos" id="aceptarTerminos">                        
-                    <labelfor="aceptarTerminos">Aceptar <a href="<?=$_ENV['RUTA']?>/es/terminos-legales">términos y condiciones de privacidad</a></label>
+                    <labelfor="aceptarTerminos">Onartu <a href="<?=$_ENV['RUTA']?>/es/terminos-legales">pribatutasun baldintzak eta baldintzak</a></label>
                 </div>
 
                 <!-- input oculto donde el value es el valor de $lang, ergo el idioma -->
                 <input type="text" name="inputIdioma" value="<?= $lang?>" style="display:none;">
 
-                <input type="submit" value="ENVIAR" class="boton">
+                <input type="submit" value="BIDALI" class="boton">
 
-                <p>* Campos obligatorios</p>
+                <p>* Derrigorrezko eremuak</p>
                 
             </form>
         </article>       
@@ -85,7 +85,7 @@
     
 
     <!-- FOOTER -->
-    <?php include './php/includes/es/footer.php'?>
+    <?php include './php/includes/eu/footer.php'?>
 
 
 </body>

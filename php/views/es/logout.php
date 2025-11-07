@@ -5,4 +5,4 @@ session_unset();
 session_destroy();
 
 header('location:'.$_ENV["RUTA"].'/es/zona-admin');
-die;
+die; 

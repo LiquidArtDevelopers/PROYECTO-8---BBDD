@@ -10,12 +10,12 @@
     if(isset($_SESSION['LOGIN']) && $_SESSION['LOGIN']=="1"){
         // MOSTRARÉ EL CONTENIDO PRIVADO
     ?>
-    <li><a href="<?=$_ENV['RUTA']?>/es/zona-admin" title="Pribatua lekua">Admin lekua</a></li>
-    <li><a href="<?=$_ENV['RUTA']?>/es/logout" title="Atera">logout</a></li>
+    <li><a href="<?=$_ENV['RUTA']?>/eu/admin-gunea" title="Pribatua lekua">Pribatua lekua</a></li>
+    <li><a href="<?=$_ENV['RUTA']?>/eu/logout" title="Atera">Atera</a></li>
     <?php
     }else{
     ?>
-    <li><a href="<?=$_ENV['RUTA']?>/es/zona-admin" title="Pribatua lekua">Login</a></li>
+    <li><a href="<?=$_ENV['RUTA']?>/eu/admin-gunea" title="Pribatua lekua">Sartu</a></li>
     <?php
     }
     ?>
