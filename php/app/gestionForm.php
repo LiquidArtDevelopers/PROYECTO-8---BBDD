@@ -17,6 +17,9 @@ $email = $_POST['email'];
 $mensaje = $_POST['mensaje'];
 $terminos = $_POST['terminos'];
 
+$respUser = $_POST['respUser'];
+$respSystem = $_POST['respSystem'];
+
 $lang = $_POST['inputIdioma'];
 $url = $_POST['inputUrl'];
 
@@ -41,6 +44,12 @@ $fecha = date('Y-m-d h:m:s');
 
 
 // 03 Validaciones de campos
+
+// Validación de aceptación de captcha
+if(empty($respUser) || empty($respSystem) || $respUser!= $respSystem){    
+    mensaje_error($lang, $_ENV['RUTA'],"captcha", "incorrecto", $nombre, $tel, $email, $mensaje);
+}
+
 
 // Validación de aceptación de términos
 if(empty($terminos)){    

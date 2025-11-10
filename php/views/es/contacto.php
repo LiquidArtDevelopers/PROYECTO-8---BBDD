@@ -90,12 +90,23 @@
                     <span class="error"><?php if( isset($campo) && $campo == "terminos"){echo "Para poder enviar una consulta, debes aceptar los términos";} ?></span>
                     <div>
                         <input type="checkbox" name="terminos" id="aceptarTerminos">                        
-                        <labelfor="aceptarTerminos">Aceptar <a href="<?=$_ENV['RUTA']?>/es/terminos-legales">términos y condiciones de privacidad</a></label>
+                        <label for="aceptarTerminos">Aceptar <a href="<?=$_ENV['RUTA']?>/es/terminos-legales">términos y condiciones de privacidad</a></label>
                     </div>
 
-                    <!-- inpout oculto donde el value es el valor de $lang, ergo el idioma -->
+                    <!-- CAPTCHA -->
+                    <span class="error"><?php if( isset($campo) && $campo == "captcha"){echo "No has resuelto corréctamente el Captcha";} ?></span>
+                    <div>
+                        <label for="respUser">Resuelve:</label>
+                        <span id="num1">1</span>
+                        <span>+</span>
+                        <span id="num2">2</span>
+                        <input type="hidden" name="respSystem" id="respSystem">
+                        <input type="text" name="respUser" id="respUser" require>
+                    </div>
+
+                    <!-- input oculto donde el value es el valor de $lang, ergo el idioma -->
                     <input type="text" name="inputIdioma" value="<?= $lang?>" style="display:none;">
-                    <!-- otro input oculta -->
+                    <!-- otro input oculto -->
                     <input type="text" name="inputUrl" value="<?= $url?>" style="display:none;">
                     
 
@@ -115,3 +126,5 @@
 
 
 </html>
+
+<script src="<?=$_ENV['RUTA']?>/assets/js/contacto.js"></script>
