@@ -20,6 +20,10 @@ $terminos = $_POST['terminos'];
 $respUser = $_POST['respUser'];
 $respSystem = $_POST['respSystem'];
 
+echo 'user: '.$respUser.'<br>';
+echo 'system: '.$respSystem;
+die;
+
 $lang = $_POST['inputIdioma'];
 $url = $_POST['inputUrl'];
 

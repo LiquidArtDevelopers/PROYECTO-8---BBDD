@@ -97,6 +97,23 @@
                         <label for="aceptarTerminos">Onartu <a href="<?=$_ENV['RUTA']?>/eu/lege-baldintzak">pribatutasun baldintzak</a></label>
                     </div>
 
+                    <!-- CAPTCHA -->
+                    <span class="error"><?php if(isset($campo) && $campo == "captcha"){echo "Ez duzu zuzen ebatzi Captcha";} ?></span>
+                    <div>
+                        <label for="respUser">Ebazten:</label>
+
+                        <!-- campos que rellenamos desde js con números random -->
+                        <span id="num1">XX</span>
+                        <span>+</span>
+                        <span id="num2">XX</span>
+                        
+                        <!-- campo que debe rellenar ewl usuario con la solución -->
+                        <input type="text" name="respUser" id="respUser">
+
+                        <!-- campo oculto con la respuesta correcta asignada desde js -->
+                        <input type="hidden" name="respSystem" id="respSystem" value="XXXX">
+                    </div>
+
                     <!-- inpout oculto donde el value es el valor de $lang, ergo el idioma -->
                     <input type="text" name="inputIdioma" value="<?= $lang?>" style="display:none;">
                     <!-- otro input oculta -->
@@ -118,3 +135,5 @@
 </body>
 
 </html>
+
+<script src="<?=$_ENV['RUTA']?>/assets/js/contacto.js"></script>

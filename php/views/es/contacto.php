@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacta con nosotros</title>
     <meta name="description" content="Página de contacto de nuestra panadería en Aginaga">
+
+    <!-- ASIGNACIÓN DE ARCHIVO CSS (MINIFICADO) A ESTE HTML -->
     <link rel="stylesheet" href="<?=$_ENV['RUTA']?>/assets/css/contacto.min.css">
 
     <!-- Url de esta vista -->
@@ -94,14 +96,20 @@
                     </div>
 
                     <!-- CAPTCHA -->
-                    <span class="error"><?php if( isset($campo) && $campo == "captcha"){echo "No has resuelto corréctamente el Captcha";} ?></span>
+                    <span class="error"><?php if(isset($campo) && $campo == "captcha"){echo "No has resuelto corréctamente el Captcha";} ?></span>
                     <div>
                         <label for="respUser">Resuelve:</label>
-                        <span id="num1">1</span>
+
+                        <!-- campos que rellenamos desde js con números random -->
+                        <span id="num1">XX</span>
                         <span>+</span>
-                        <span id="num2">2</span>
-                        <input type="hidden" name="respSystem" id="respSystem">
-                        <input type="text" name="respUser" id="respUser" require>
+                        <span id="num2">XX</span>
+                        
+                        <!-- campo que debe rellenar ewl usuario con la solución -->
+                        <input type="text" name="respUser" id="respUser">
+
+                        <!-- campo oculto con la respuesta correcta asignada desde js -->
+                        <input type="hidden" name="respSystem" id="respSystem" value="XXXX">
                     </div>
 
                     <!-- input oculto donde el value es el valor de $lang, ergo el idioma -->
