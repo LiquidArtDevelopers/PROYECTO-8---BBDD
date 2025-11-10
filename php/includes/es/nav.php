@@ -1,3 +1,10 @@
+<input type="checkbox" name="toggle" id="chec" >
+<label for="chec" class="contenedor_spam">
+    <span ></span>
+    <span></span>
+    <span></span>
+</label>
+
 <nav>
     <img src="<?=$_ENV['RUTA']?>/assets/img/logos/panaderia-aginaga-logo.svg" alt="Logotipo Panadería Aginaga" title="Panadería Aginaga" width="100" height="40">
 

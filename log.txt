@@ -9,16 +9,18 @@ Quiero que revises el sitemap y em digas si es correcto para que sea compatible
 2025-11-05 12:35:00 - para luego poder comprobar la contraseÃ±a con el hash de la bbdd uso la misma funciÃ³n de convertir a hash la pass que el user ponga en el login o hay otra funciÃ³n?
 2025-11-07 19:02:30 - En estas comprobaciones:
 
-// PASS1 NO VENGA VACÍO
+// PASS1 NO VENGA VACï¿½O
 if(empty($pass1) || empty($pass2)){    
-    mensaje_error_logup($_ENV['RUTA'], "No puedes dejar el campo contraseña vacío", $lang);
+    mensaje_error_logup($_ENV['RUTA'], "No puedes dejar el campo contraseï¿½a vacï¿½o", $lang);
 }
 
-// QUE LOS PASSWORD NO COINCIDAN ENTRE SÍ
+// QUE LOS PASSWORD NO COINCIDAN ENTRE Sï¿½
 if($pass1 != $pass2){
-    mensaje_error_logup($_ENV['RUTA'], "Las contraseñas no coinciden", $lang);
+    mensaje_error_logup($_ENV['RUTA'], "Las contraseï¿½as no coinciden", $lang);
 }
 
-Quiero que hagas el mismo shitch case que verás en las comprobaciones anteriores, respetando el fallo, y de paso traduce a eu la que corresponde.
+Quiero que hagas el mismo shitch case que verï¿½s en las comprobaciones anteriores, respetando el fallo, y de paso traduce a eu la que corresponde.
 
-Más abajo verá smás comprobaciones para hacer switch case
+Mï¿½s abajo verï¿½ smï¿½s comprobaciones para hacer switch case
+
+2025-11-10 00:00:00 - Ayudame con esta parte que no me funciona. Quiero que haya una transiciÃ³n entre el hover y el estado normal. La atual no funciona.
