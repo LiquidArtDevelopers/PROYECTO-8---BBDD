@@ -1,11 +1,8 @@
 @use 'config' as c;
 
 // Aquí irán los estilos de todos los elementos que estén presentes en TODAS LAS VISTAS DE LA WEB
-
 // Los estilso del nav
-
 // los estilos del footer
-
 // Otros elementos comunes a todas las vistas, pues también irán aquí.
 
 #chec{
@@ -96,9 +93,6 @@ nav{
         li{
             position: relative;            
             .sublista{
-                /* Usar un max-height numérico porque "max-content"/"auto" no se
-                   interpola en la transición. Ajusta 500px si tu contenido
-                   puede ser más alto. */
                 max-height: 0;
                 overflow: hidden;
                 position: absolute;
@@ -117,7 +111,7 @@ nav{
                 pointer-events: none;
 
                 /* animar max-height + opacity + padding para un efecto suave */
-                transition: 0.35s ease, opacity 0.35s ease, padding 0.35s ease;
+                transition: 0.35s ease;
             }
             &:hover .sublista{
                 /* max-height con un valor suficientemente grande para el contenido */

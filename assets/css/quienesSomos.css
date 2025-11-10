@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -231,9 +230,6 @@ nav > ul li {
   position: relative;
 }
 nav > ul li .sublista {
-  /* Usar un max-height numérico porque "max-content"/"auto" no se
-     interpola en la transición. Ajusta 500px si tu contenido
-     puede ser más alto. */
   max-height: 0;
   overflow: hidden;
   position: absolute;
@@ -250,7 +246,7 @@ nav > ul li .sublista {
   opacity: 0;
   pointer-events: none;
   /* animar max-height + opacity + padding para un efecto suave */
-  transition: 0.35s ease, opacity 0.35s ease, padding 0.35s ease;
+  transition: 0.35s ease;
 }
 nav > ul li:hover .sublista {
   /* max-height con un valor suficientemente grande para el contenido */
