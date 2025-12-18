@@ -24,3 +24,6 @@ Quiero que hagas el mismo shitch case que ver�s en las comprobaciones anterior
 M�s abajo ver� sm�s comprobaciones para hacer switch case
 
 2025-11-10 00:00:00 - Ayudame con esta parte que no me funciona. Quiero que haya una transición entre el hover y el estado normal. La atual no funciona.
+2025-12-18 13:25:37 - Vamos a hacer la prueba de crear una tabla nueva en la DB para guardar todos las consultas que se hagan en la web. La tabla que guarde un datetime, los datos de la persona que ha escrito y el mensaje.
+2025-12-18 14:00:00 - ejecuta en localhost:3000 el proyecto y revisa en consola si hay mejoras de rendimiento
+2025-12-18 15:00:00 - Prueba a rellenar el formulario y a realizar pruebas de envío, a ver si se registran los datos en la bbdd

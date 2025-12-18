@@ -20,15 +20,11 @@ $terminos = $_POST['terminos'];
 $respUser = $_POST['respUser'];
 $respSystem = $_POST['respSystem'];
 
-echo 'user: '.$respUser.'<br>';
-echo 'system: '.$respSystem;
-die;
-
 $lang = $_POST['inputIdioma'];
 $url = $_POST['inputUrl'];
 
 $ip = $_SERVER['REMOTE_ADDR'];
-$fecha = date('Y-m-d h:m:s');
+$fecha = date('Y-m-d H:i:s');
 
 
 // // 02 Comprobación DEV (mostrarlos a través de echo para ver que vienen bien)
@@ -94,6 +90,28 @@ if($numeroCaracteres < 5 || $numeroCaracteres > 200){
 }
 
 
+
+
+// Guardar la consulta en la base de datos
+$con = mysqli_connect($_ENV['BBDD_HOST'], $_ENV['BBDD_USER'], $_ENV['BBDD_PASS'], $_ENV['BBDD_BBDD']);
+
+if ($con === false) {
+    error_log('Error de conexion con la BBDD (consultas_web): ' . mysqli_connect_error());
+} else {
+    $con->set_charset("utf8mb4");
+    $sql = "INSERT INTO `consultas_web` (`creado_en`, `nombre`, `telefono`, `email`, `mensaje`, `ip`, `idioma`, `url_origen`) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
+    $stmt = mysqli_prepare($con, $sql);
+
+    if ($stmt === false) {
+        error_log('Error al preparar la insercion de consultas_web: ' . mysqli_error($con));
+    } else {
+        mysqli_stmt_bind_param($stmt, "ssssssss", $fecha, $nombre, $tel, $email, $mensaje, $ip, $lang, $url);
+        mysqli_stmt_execute($stmt);
+        mysqli_stmt_close($stmt);
+    }
+
+    mysqli_close($con);
+}
 
 
 // 04 envío de correos
