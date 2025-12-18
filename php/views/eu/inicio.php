@@ -22,7 +22,7 @@
     // Metadatos globales
     include './php/includes/eu/metadatos_globales.php'
     ?>
-        
+
 </head>
 
 <body>
@@ -38,12 +38,12 @@
 
 
     <!-- HERO01 -->
-    <header>        
-        <h1>Aginagako Okindegia</h1>
-        <div>            
+    <header>
+        <h1>Lorem Ipsum Aginaga</h1>
+        <div>
             <img src="<?=$_ENV['RUTA']?>/assets/img/logos/panaderia-aginaga-logo.svg" alt="">
         </div>
-        <a href="<?=$_ENV['RUTA']?>/eu/kontaktua" class="boton">Jarri harremanetan</a>    
+        <a href="<?=$_ENV['RUTA']?>/eu/kontaktua" class="boton">Lorem ipsum</a>
     </header>
 
 
@@ -54,39 +54,39 @@
         <section class="sect01">
             <div class="h2Especial">
                 <span></span>
-                <h2>Hona hemen zure okindegia Aginagan</h2>
+                <h2>Lorem ipsum Aginagan</h2>
             </div>
 
             <article>
                 <!-- hijo 1 -->
                 <div>
-                    <h3>Eguneroko produktu artisaua</h3>
-                    <p>100 urte baino gehiago daramatzagu Aginagan gure bezeroak kalitate oneneko ama orez eta irinez egindako ogi onenekin asetzen. Gure gozotegiak produktu sorta zabala du, produktu onenekin egina</p>
+                    <h3>Lorem ipsum egunerokoa</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec lacus at dui fermentum rhoncus non vel velit. Nunc ultricies porttitor ligula, nec tincidunt lectus eleifend ac. Donec aliquet nisl sit amet urna gravida tempus.</p>
                     <span></span>
                     <div class="cards">
 
                         <div class="card">
                             <img src="<?=$_ENV['RUTA']?>/assets/img/system/people-outline.svg" alt="">
-                            <h4>Lanbidez okinak</h4>
-                            <p>Ezagutu gure lantegi eta okinen taldea.</p>
+                            <h4>Lorem ipsum taldea</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur.</p>
                             <a href="<?=$_ENV['RUTA']?>/eu/guri-buruz" class="moduloBoton01">
-                                <span>Ezagutu gure taldea</span>
+                                <span>Lorem ipsum dolor</span>
                                 <img src="<?=$_ENV['RUTA']?>/assets/img/system/arrow-forward-outline.svg" alt="" title="">
                             </a>
                         </div>
                         <div class="card">
                             <img src="<?=$_ENV['RUTA']?>/assets/img/system/star-outline.svg" alt="">
-                            <h4>Lehen mailako produktuak</h4>
-                            <p>Egunero maisuek irin onenekin eginak.</p>
+                            <h4>Lorem ipsum kalitatea</h4>
+                            <p>Egunero arreta eta zaintzarekin egina.</p>
                             <a href="<?=$_ENV['RUTA']?>/eu/produktuak" class="moduloBoton01">
-                                <span>Gure produktuak</span>
+                                <span>Lorem ipsum dolor</span>
                                 <img src="<?=$_ENV['RUTA']?>/assets/img/system/arrow-forward-outline.svg" alt="" title="">
                             </a>
                         </div>
 
                     </div>
                     <a href="<?=$_ENV['RUTA']?>/eu/kontaktua" class="moduloBoton02">
-                        <span>Jarri gurekin harremanetan</span>
+                        <span>Lorem ipsum dolor sit</span>
                         <img src="<?=$_ENV['RUTA']?>/assets/img/system/arrow-forward-outline.svg" alt="100 urte baino gehiago kalitaterik onena eskaintzen Aginagan" title="100 urte baino gehiago kalitaterik onena eskaintzen Aginagan">
                     </a>
                 </div>
@@ -102,49 +102,49 @@
         <section>
             <div class="h2Especial">
                 <span></span>
-                <h2>Ezagutu gure taldea</h2>
+                <h2>Lorem ipsum taldearen gainean</h2>
             </div>
             <!-- Artículo 03 -->
             <article class="art03">
-                <h3>100 urte baino gehiagoko okin-tradizioa duen taldea</h3>
-                <p>Aginagan, ogia elikagaia baino gehiago da: duela 100 urte baino gehiagotik egunero goiz jaikitzen diren okinen belaunaldien ondarea da, lan egiteko modu benetakoa bizirik mantentzeko. Gure taldeak heredatutako jakinduria artisaua teknika modernoekin uztartzen du, antzinako zapore eta testura guztiak gordetzen dituzten ogiak lortuz.</p>
-                <p>Labean egindako pieza bakoitzaren atzean esku adituak, pazientzia eta pasioa daude. Gure oreak astiro egiten ditugu, hartzidura naturalaren denborak errespetatuz eta lehen mailako irinak hautatuz. Horrela lortzen ditugu kanpotik kurruskari, barrutik samur eta benetako lantegi batean soilik lortzen den usain bereizgarri hori duten ogiak.</p>
+                <h3>Lorem ipsum tradizioarekin</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit, velit vel lobortis sagittis, eros erat congue nunc, non luctus risus mi eu lacus. Sed vitae quam in tortor scelerisque sollicitudin vel vitae ipsum.</p>
+                <p>Morbi pretium magna vitae tortor blandit, at posuere odio elementum. Suspendisse bibendum lectus eget varius ultrices. Sed vehicula hendrerit sapien, nec tincidunt tellus. In euismod massa id mi aliquam, non suscipit neque euismod.</p>
                 <img src="<?=$_ENV['RUTA']?>/assets/img/vistas/inicio/panaderas-profesionales-1500.avif" alt="Aginagako okinen taldea lantegian lanean" title="Aginagako okinen taldea">
 
             </article>
 
             <!-- artículo 05 -->
             <article class="art05">
-                <h3>Ezagutu gure okindegiaren historia</h3>
-                <p>1923tik, gure okindegia Aginagaren bihotza izan da, tradizioaren eta berrikuntzaren arteko topaketa salbuespenezko produktuak sortzeko. Hiru belaunaldiko okin maisuek bizirik mantendu dute okintza artisauaren artea.</p>
-                <p>Gonbidatzen zaitugu gure historia, gure taldea eta egiten dugun produktu bakoitzean jartzen dugun pasioa hobeto ezagutzera. Ezagutu nola eboluzionatu dugun artisauaren esentzia mantenduz.</p>
-                <a href="<?=$_ENV['RUTA']?>/eu/guri-buruz" class="boton">Ezagutu gure historia</a>
+                <h3>Lorem ipsum gure historiari</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac sem in mi pharetra feugiat. Praesent volutpat, nibh ac porta dignissim, nisl lacus tempor ante, non consequat arcu neque sed tortor.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget mauris enim. Suspendisse potenti. Mauris efficitur porttitor arcu, in euismod odio condimentum id.</p>
+                <a href="<?=$_ENV['RUTA']?>/eu/guri-buruz" class="boton">Lorem ipsum</a>
             </article>
 
             <!-- artículo 06 -->
             <article class="art06">
                 <div>
-                    <h3>Aginagaren arima ahokada bakoitzean</h3>
-                    <p>Okindegi soil bat baino gehiago gara, auzokideek eguneko ogia aukeratzen duten bitartean istorioak partekatzen dituzten topagunea. Goizero gure kaleak betetzen dituen ogi berriaren usaina Aginagaren nortasunaren parte bihurtu da.</p>
-                    <p>Gure lantegia tradizioa bizirik dagoen espazioa da, pieza bakoitzak kontatzeko istorio bat duen lekua eta denborak bere bide naturala hartzen duen tokia. Esperientzia paregabe honen parte izatera gonbidatzen zaitugu, zergatik garen okindegi bat baino askoz gehiago zuzenean ezagutzera.</p>
-                    <a href="<?=$_ENV['RUTA']?>/eu/kontaktua" title="" class="boton">Etorri bisitan</a>
+                    <h3>Lorem ipsum aho bakoitzean</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur mattis semper velit, sed pharetra leo interdum sed. Vestibulum id massa vitae lacus blandit tempus.</p>
+                    <p>Integer et augue id mi blandit pulvinar. Duis sed ultrices risus. Vestibulum sagittis odio non ipsum hendrerit, a interdum orci suscipit. Fusce ut risus non erat laoreet aliquet.</p>
+                    <a href="<?=$_ENV['RUTA']?>/eu/kontaktua" title="" class="boton">Lorem ipsum</a>
                 </div>
             </article>
         </section>
 
-        
+
 
         <!-- SECCIÓN PRODUCTOS -->
         <section>
             <div class="h2Especial">
                 <span></span>
-                <h2>Gure produktuak</h2>
+                <h2>Lorem ipsum produktuak</h2>
             </div>
             <!-- Artículo 02-bis -->
             <article class="art02-bis">
                 <div class="textos">
-                    <h3>Kalitaterik onena egunero egindako produktuetan</h3>
-                    <p>Gure produktu-karta denboraldi bakoitzean eguneratzen da, baina gure nortasuna definitzen duten hiru zutabetan oinarritzen da. Lehenik, 24 orduz hartzitzen den <b>ama oreko ogia</b>, kraska kurruskaria eta zaporez eta mantenugaiz betetako albeolatu irregularra garatzen duena: hau da "<b>Aginagako okindegia</b>" edo "<b>ama oreko ogia Usurbilen</b>" bilatzen dutenen gogokoena. Bigarrenik, gure <b>pastel artisauak</b>, baserriko gurin eta arrautzekin eginak, zapore artifizialik gabe, Nafarroako hur-krema edo sagar erregina konpota bezalako sasoiko betegaiekin. Azkenik, <b>torrija</b>ak, amonaren errezetan inspiratuta baina urte osoan eskuragarri; azahar-eztiarekin edo bourbon banilla-almibarra fin batekin zerbitzatzen ditugu, ahaztezin bihurtzen dituena. Produktu bakoitzak bere prozesu arretatsua du, alergeno-fitxa eguneratuak eta <b>online erreserbatzeko</b> aukera, iritsi eta prest izateko. Gainera, gure <b>Aginagako torrija</b> ospetsuak online erresba daitezke edozein ospakizunetarako, gure <b>Aginagako okindegia</b> postre tradizional baterako aukera gogokoena izanik.</p>
+                    <h3>Lorem ipsum kalitatearekin</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lobortis leo id lectus viverra sagittis. Suspendisse venenatis efficitur justo, vitae dapibus nunc vehicula et. Phasellus volutpat pulvinar neque nec bibendum. Cras eget velit pellentesque, semper lacus et, condimentum risus. Maecenas dignissim est neque, at condimentum lectus blandit a. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin luctus, mi non viverra dapibus, eros orci rutrum mi, sed volutpat ante enim nec erat. Sed elementum dignissim ultrices. Maecenas a urna commodo, suscipit mauris ac, dapibus risus.</p>
                     <a href="<?=$_ENV['RUTA']?>/eu/produktuak" class="moduloBoton02">
                         <span>Informazio gehiago</span>
                         <img src="<?=$_ENV['RUTA']?>/assets/img/system/arrow-forward-outline.svg" alt="Joan Gure produktuetara" title="Informazio gehiago">
