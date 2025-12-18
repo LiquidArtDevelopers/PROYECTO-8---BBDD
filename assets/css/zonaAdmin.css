@@ -525,4 +525,100 @@ header > :nth-child(2) {
 header h1 {
   color: white;
   font-size: clamp(1rem, 3vw, 3rem);
-}/*# sourceMappingURL=zonaAdmin.css.map */
+}
+header .mensajeBienvenida {
+  color: white;
+  text-align: center;
+  font-size: 1rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  max-width: 650px;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.panelConsultas {
+  width: 100%;
+  padding: 3rem 1.5rem 4rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 2rem;
+}
+@media only screen and (min-width: 1200px) {
+  .panelConsultas {
+    padding: 4rem 0 5rem 0;
+    row-gap: 3rem;
+  }
+}
+.panelConsultas .tablaConsultas {
+  width: min(1200px, 100%);
+  background-color: white;
+  border-radius: 16px;
+  padding: 2rem 1.5rem;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+@media only screen and (min-width: 800px) {
+  .panelConsultas .tablaConsultas {
+    padding: 2.5rem 2rem;
+  }
+}
+.panelConsultas .tablaConsultas .introConsultas {
+  color: rgb(29, 29, 29);
+  line-height: 1.6;
+}
+.panelConsultas .tablaConsultas .estadoConsultas {
+  font-weight: 600;
+  color: rgb(29, 29, 29);
+}
+.panelConsultas .tablaConsultas .estadoConsultas.error {
+  color: #d14d4d;
+}
+.panelConsultas .tablaConsultas .tablaResponsive {
+  width: 100%;
+  overflow-x: auto;
+}
+.panelConsultas .tablaConsultas table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.panelConsultas .tablaConsultas table thead {
+  background-color: rgb(29, 29, 29);
+}
+.panelConsultas .tablaConsultas table thead th {
+  color: white;
+  font-size: 0.9rem;
+  text-align: left;
+  padding: 0.85rem 1rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.panelConsultas .tablaConsultas table tbody tr {
+  transition: 0.3s ease;
+}
+.panelConsultas .tablaConsultas table tbody tr:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.03);
+}
+.panelConsultas .tablaConsultas table tbody tr:hover {
+  background-color: rgba(209, 77, 77, 0.08);
+}
+.panelConsultas .tablaConsultas table tbody tr td {
+  padding: 0.85rem 1rem;
+  vertical-align: top;
+  line-height: 1.4;
+  min-width: 120px;
+}
+.panelConsultas .tablaConsultas table tbody tr td:nth-child(5) {
+  min-width: 200px;
+}
+
+/*# sourceMappingURL=zonaAdmin.css.map */
