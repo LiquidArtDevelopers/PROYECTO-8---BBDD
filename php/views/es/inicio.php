@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Panadería Aginaga | Obrador pastelería de alta calidad</title>
-    <meta name="description" content="120 y 320 caracteres">
+    <title>Panadería Aginaga | Obrador de pan y pastelería artesanal</title>
+    <meta name="description" content="Panadería y pastelería artesanal en Aginaga desde 1925. Conoce a nuestro equipo, descubre nuestros productos y disfruta de un trato cercano en cada visita.">
     <link rel="stylesheet" href="<?=$_ENV['RUTA']?>/assets/css/inicio.min.css">
 
     <!-- Url de esta vista -->
@@ -32,11 +32,11 @@
 
     <!-- HERO01 -->
     <header>
-        <h1>Lorem Ipsum Aginaga</h1>
+        <h1>Panadería Aginaga, tradición artesanal desde 1925</h1>
         <div>
             <img src="<?=$_ENV['RUTA']?>/assets/img/logos/panaderia-aginaga-logo.svg" alt="">
         </div>
-        <a href="<?=$_ENV['RUTA']?>/es/contacto" class="boton">Lorem ipsum</a>
+        <a href="<?=$_ENV['RUTA']?>/es/contacto" class="boton">Haz tu pedido</a>
     </header>
 
     <main>
@@ -44,37 +44,37 @@
         <section class="sect01">
             <div class="h2Especial">
                 <span></span>
-                <h2>Lorem ipsum en Aginaga</h2>
+                <h2>Pan, pasteles y cercanía en Aginaga</h2>
             </div>
 
             <article>
                 <!-- hijo 1 -->
                 <div>
-                    <h3>Lorem ipsum para cada día</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fringilla sapien vitae lorem rhoncus, ut egestas nisl molestie. Sed placerat ligula eu justo dictum, at iaculis orci gravida. Vivamus sit amet laoreet augue, ac sodales arcu. Praesent commodo sem vel varius accumsan, fusce sollicitudin arcu vel est aliquam.</p>
+                    <h3>Un obrador vivo cada mañana</h3>
+                    <p>En Aginaga horneamos cada día panes de masa madre y dulces artesanos con ingredientes seleccionados. Nuestro obrador combina las recetas de siempre con técnicas actuales para que cada pieza llegue fresca, crujiente y con el sabor auténtico de nuestra tierra.</p>
                     <span></span>
                     <div class="cards">
                         <div class="card">
                             <img src="<?=$_ENV['RUTA']?>/assets/img/system/people-outline.svg" alt="">
-                            <h4>Equipo lorem experto</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur.</p>
+                            <h4>Equipo cercano y experto</h4>
+                            <p>Más de 20 profesionales dedicados al pan y la pastelería artesanal, siempre dispuestos a ayudarte.</p>
                             <a href="<?=$_ENV['RUTA']?>/es/sobre-nosotros" class="moduloBoton01">
-                                <span>Lorem ipsum dolor</span>
+                                <span>Conoce quiénes somos</span>
                                 <img src="<?=$_ENV['RUTA']?>/assets/img/system/arrow-forward-outline.svg" alt="" title="">
                             </a>
                         </div>
                         <div class="card">
                             <img src="<?=$_ENV['RUTA']?>/assets/img/system/star-outline.svg" alt="">
-                            <h4>Calidad lorem ipsum</h4>
-                            <p>Elaborado cada día con detalle y cuidado.</p>
+                            <h4>Calidad que se nota</h4>
+                            <p>Panes, pasteles y torrijas artesanas elaborados a diario con harinas selectas y fermentaciones largas.</p>
                             <a href="<?=$_ENV['RUTA']?>/es/productos" class="moduloBoton01">
-                                <span>Lorem ipsum dolor</span>
+                                <span>Descubre nuestros productos</span>
                                 <img src="<?=$_ENV['RUTA']?>/assets/img/system/arrow-forward-outline.svg" alt="" title="">
                             </a>
                         </div>
                     </div>
                     <a href="<?=$_ENV['RUTA']?>/es/contacto" class="moduloBoton02">
-                        <span>Lorem ipsum dolor sit</span>
+                        <span>Haz tu pedido o reserva</span>
                         <img src="<?=$_ENV['RUTA']?>/assets/img/system/arrow-forward-outline.svg" alt="Más de 100 años ofreciendo la mejor calidad en Agiña" title="Más de 100 años ofreciendo la mejor calidad en Agiña">
                     </a>
                 </div>
@@ -89,34 +89,34 @@
         <section>
             <div class="h2Especial">
                 <span></span>
-                <h2>Lorem ipsum dolor sit amet</h2>
+                <h2>Somos panaderos por tradición</h2>
             </div>
             <!-- Artículo 03 -->
             <article class="art03">
-                <h3>Lorem ipsum con tradición lorem</h3>
+                <h3>Casi un siglo de oficio artesanal</h3>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer id dignissim augue. Praesent bibendum mauris et nisl vehicula, in cursus eros suscipit. Sed vitae sapien ultricies, bibendum augue id, tempus ligula. Nunc tincidunt eros id magna blandit, vel pulvinar lorem facilisis. In at convallis ipsum, sit amet aliquam nulla.</p>
+                <p>Desde 1925 mantenemos viva la tradición panadera de Aginaga. Somos un equipo que ha aprendido el oficio de generación en generación y que sigue cuidando cada detalle: la selección de harinas, las fermentaciones lentas y el horneado que perfuma el barrio cada mañana.</p>
 
-                <p>Curabitur elementum augue eget turpis tincidunt, id auctor enim congue. Donec mattis lorem non aliquam faucibus. Suspendisse gravida mi et aliquam tempor. In hendrerit, neque non placerat fermentum, lorem augue vulputate libero, sit amet congue lorem est a magna. Phasellus fermentum neque sed nunc tristique, vitae convallis dolor tristique.</p>
+                <p>Creemos en la cercanía y el trato personal. Queremos que nos conozcas, que sepas quién amasa tu pan y quién prepara tus dulces favoritos. Por eso abrimos nuestro obrador y compartimos cada día el trabajo que nos apasiona.</p>
 
                 <img src="<?=$_ENV['RUTA']?>/assets/img/vistas/inicio/panaderas-profesionales-1500.avif" alt="Equipo de panaderos de Aginaga trabajando en el obrador" title="Equipo de panaderos de Aginaga">
             </article>
 
             <!-- artículo 05 -->
             <article class="art05">
-                <h3>Lorem ipsum de nuestra historia</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras gravida mattis nisl, ac ornare risus dictum vitae. Curabitur interdum lacus ac justo interdum, eget ullamcorper leo interdum. Vivamus vehicula, arcu id ultricies laoreet, lectus lacus suscipit mauris, id laoreet augue lorem quis lectus.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra, odio eu tempus porttitor, neque urna dictum felis, vel cursus ligula velit sed justo. Cras malesuada eros sit amet pharetra dapibus.</p>
-                <a href="<?=$_ENV['RUTA']?>/es/sobre-nosotros" class="boton">Lorem ipsum</a>
+                <h3>Nuestra historia, nuestro barrio</h3>
+                <p>La familia Arrizabalaga abrió las puertas de la panadería en Aginaga hace casi cien años. Hoy seguimos aquí, cerca de ti, creciendo junto a las personas que nos visitan cada día. Cada hogaza y cada pastel lleva el sabor de nuestras raíces y el cariño de quienes los elaboran.</p>
+                <p>Te invitamos a conocernos, a preguntar, a compartir un café en nuestra terraza y a descubrir por qué seguimos siendo la panadería de confianza del barrio.</p>
+                <a href="<?=$_ENV['RUTA']?>/es/sobre-nosotros" class="boton">Saber más sobre nosotros</a>
             </article>
 
             <!-- artículo 06 -->
             <article class="art06">
                 <div>
-                    <h3>Lorem ipsum en cada bocado</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ultricies tortor vitae orci consequat, ut feugiat eros ultrices.</p>
-                    <p>Etiam id consectetur ipsum. Morbi eleifend eros sed bibendum blandit. Quisque facilisis vulputate tortor, nec luctus justo blandit id. Donec at sem eget neque tempor auctor at quis justo.</p>
-                    <a href="<?=$_ENV['RUTA']?>/es/contacto" title="" class="boton">Lorem ipsum</a>
+                    <h3>Servicio cercano en cada bocado</h3>
+                    <p>Escuchamos lo que necesitas y te recomendamos el pan o el dulce perfecto para cada ocasión. Elaboramos por encargo, preparamos tartas personalizadas y cuidamos cada detalle para que siempre te lleves lo mejor del obrador a tu mesa.</p>
+                    <p>Si buscas un trato cercano y productos artesanos, aquí nos tienes. Ven a vernos o llámanos y estaremos encantados de ayudarte.</p>
+                    <a href="<?=$_ENV['RUTA']?>/es/contacto" title="" class="boton">Contacta con nosotros</a>
                 </div>
             </article>
 
@@ -126,14 +126,14 @@
         <section>
             <div class="h2Especial">
                 <span></span>
-                <h2>Lorem ipsum de productos</h2>
+                <h2>Nuestros productos artesanos</h2>
             </div>
 
             <!-- Artículo 02-bis -->
             <article class="art02-bis">
                 <div class="textos">
-                    <h3>Lorem ipsum con calidad diaria</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer suscipit risus nec dignissim dignissim. Vivamus condimentum, augue vitae hendrerit vestibulum, nibh enim facilisis ex, at volutpat elit sem quis nulla. Sed pretium hendrerit nisl, eu tincidunt sem interdum in. Nullam vitae sapien eget lorem aliquet bibendum et non libero. Suspendisse mollis, tortor et aliquet tempor, arcu quam vulputate sapien, eget iaculis sem lectus et ipsum. Aenean finibus nibh vel lacinia luctus. Praesent sed ipsum maximus, cursus nisl ut, ornare eros. Curabitur vitae elementum erat. Integer facilisis nisl at turpis posuere, ut ullamcorper libero accumsan. Praesent dapibus, augue vitae hendrerit dapibus, justo mi condimentum massa, vitae faucibus ligula quam in felis. Nam sed sapien fermentum, scelerisque nunc sit amet, tristique lectus.</p>
+                    <h3>Pan, pastelería y dulces con identidad propia</h3>
+                    <p>Nuestras especialidades hablan de quiénes somos: panes de masa madre con largas fermentaciones, pasteles artesanos elaborados cada día y las torrijas que se han convertido en nuestro icono más dulce. Seleccionamos materias primas de proximidad y trabajamos con el tiempo y el mimo que merecen las elaboraciones artesanas.</p>
                     <a href="<?=$_ENV['RUTA']?>/es/productos" class="moduloBoton02">
                         <span>Más información</span>
                         <img src="<?=$_ENV['RUTA']?>/assets/img/system/arrow-forward-outline.svg" alt="Ir a Nuestros productos" title="Más información">
