@@ -92,6 +92,8 @@ if($numeroCaracteres < 5 || $numeroCaracteres > 200){
 
 
 
+
+
 // Guardar la consulta en la base de datos
 $con = mysqli_connect($_ENV['BBDD_HOST'], $_ENV['BBDD_USER'], $_ENV['BBDD_PASS'], $_ENV['BBDD_BBDD']);
 
