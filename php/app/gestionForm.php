@@ -287,8 +287,5 @@ switch ($lang){
         die;
 }
 
-
-
-
 ?>
 
