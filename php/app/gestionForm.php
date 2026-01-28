@@ -218,6 +218,7 @@ include "./envioPhpMailer.php"; //necesite ejecutar el envío de correo.
 
 // enviar un correo al admin de la web
 // recoger más variables que necesita el phpMailer:correo emisor y el nombre emisor,el correo receptor y su nombre, título del correo
+$urlWeb="http://localhost:3000";
 $correoEmisor =$_ENV['EMAIL_WEB'];
 $nombreEmisor ="Web Panadería";
 $correoDestinatario = $_ENV['EMAIL_ADMIN'];
@@ -231,7 +232,7 @@ $cuerpo='
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>'.$asunto.'</title>
 </head>
-<body align="center" style="padding: 1.5rem;background-color: rgb(255, 227, 227);">
+<body align="center" style="padding: 1.5rem;background-color: rgb(255, 227, 227);">    
     <h1>Has recibido un nuevo mensaje de '.$nombre.'</h1>
     <p>Estos son los datos que hemos recibido en la web de <a href="https://profe.webda.eus/proyecto05/">profe.webda.eus/proyecto05</a> de la consulta del usuario:</p>
     <table align="center">
